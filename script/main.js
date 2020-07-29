@@ -1,17 +1,38 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Welcome to Galych!';
+// Image switcher code
 
-let myVeriable;
-myVeriable = "Bob";
+let myImage = document.querySelector('img');
 
-/* Javascript comment
-*/
+myImage.onclick = function () {
+    let mySrc = myImage.getAttribute('src');
+    if (mySrc === 'image/galych2.jpg') {
+        myImage.setAttribute('src', 'image/galich.jpg');
+    } else {
+        myImage.setAttribute('src', 'image/galych2.jpg');
+    }
+}
 
-// this is comment
+// Personalized welcome message code
 
-let iceCream = 'chocolate';
-if (iceCream === 'chocolate') {
-    alert('Galych - old capital of Medeval ages!');
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+    let myName = prompt('Please enter your name.');
+    if (!myName) {
+        setUserName();
+    } else {
+        localStorage.setItem('name', myName);
+        myHeading.innerHTML = 'Welcome to Galych, ' + myName;
+    }
+}
+
+if (!localStorage.getItem('name')) {
+    setUserName();
 } else {
-    alert('Awwww, but chocolate is my favorite...');
+    let storedName = localStorage.getItem('name');
+    myHeading.innerHTML = 'Welcome to Galych, ' + storedName;
+}
+
+myButton.onclick = function () {
+    setUserName();
 }
