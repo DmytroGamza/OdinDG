@@ -12,10 +12,19 @@
     <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" /> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
 </head>
 
+<style>
+    h1 {
+        font-family: Lobster, "Open Sans";
+    }
+</style>
+
 <body>
-    <h1>Good day every one</h1>
+    <h1 style="color: navajowhite;">Good </h1>
+    <h1> Good day every one</h1>
     <button>Change User</button>
 
     <p>Га́лич — місто, засноване на відстані близько 5 км від зруйнованого давнього Галича, центру Галицько-Волинського
@@ -31,8 +40,34 @@
     <p class="text-type">Galych is <strong>very</strong> beautifull</p>
     <img class="img-size" src="image/galych-1.jpg" alt="Galych, Ukraine">
 
-    <p>Type your comment</p>
-    <input type="text" placeholder="please">
+    <p>We are greatly apriciate your Feedback</p>
+    <div>
+        <p>
+            <label for="stay">
+                <input id="stay" value="stay" type="radio" name="stay-travel">Stay
+            </label>
+
+            <label for="travel">
+                <input id="travel" value="stay" type="radio" name="stay-travel">Travel
+            </label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="nice-poeple"><input id="nice-poeple" type="checkbox" name="personality"> Nice People</label>
+        </p>
+        <p>
+            <label for="food"><input id="food" type="checkbox" name="personality"> Food</label>
+        </p>
+        <p>
+            <label for="history"><input id="history" type="checkbox" name="personality" checked> History</label>
+        </p>
+    </div>
+    <form action="https://www.atlassian.com/git/tutorials/what-is-version-control">
+        <input type="text" placeholder="please" required>
+        <button type="submit">Submit</button>
+
+    </form>
 
     <script src="script/main.js"></script>
 
