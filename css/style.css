@@ -9,24 +9,18 @@
   margin: 10px 0px 15px 0px;
 } 
 
-:root {
-    --penguin-skin: gray;
-    --penguin-belly: pink;
-    --penguin-beak: orange;
-  }
 
   .highlight-1 {
   background-color: rgba(45, 45, 65, 0.1);
   }
 
-    .navbar {
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      background-color: #767676;
-    }
+ 
 
+ .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
 
 html {
   font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
