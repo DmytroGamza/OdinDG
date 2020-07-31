@@ -18,8 +18,8 @@
 
  .first {
     background-color: red;
+       z-index: 2;
     position: absolute;
-    z-index: 2;
   }
 
 html {
@@ -71,4 +71,8 @@ p, li {
 
 .img-size2 {
   width: 250px;
+}
+
+.margins-blocks {
+  padding-bottom: 15px;
 }

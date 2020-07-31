@@ -26,6 +26,13 @@
         --penguin-belly: pink;
         --penguin-beak: orange;
     }
+
+    button {
+        border-radius: 5px;
+        color: white;
+        background-color: #0F5897;
+        padding: 5px 10px 8px 10px;
+    }
 </style>
 
 <body>
@@ -51,8 +58,14 @@
         князівства, наймогутнішої твердині на південно-західних давньоруських землях.</p>
     <a href="https://google.com">Ссылка на Google</a>
 
-    <p>anotehr link</p>
-    <a href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B8%D1%87">Galych from wikipedia</a>
+    <p>Wiki link</p>
+    <a accesskey="w" href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B8%D1%87">Galych from wikipedia</a>
+
+    <p>
+        <audio controls>
+            <source src="sound/Vicetone - South Beach.mp3" type="audio/mpeg" /> A sound clip of
+            Zersiax's screen reader in action.</audio>
+    </p>
 
     <p>test image</p>
     <img class="img-size2" src="image/Galych2.jpg" alt="My test image">
@@ -89,11 +102,50 @@
 
     </form>
 
+    <section class="margins-blocks">
+        <form>
+            <p>Sign up to receive Camper Cat's blog posts by email here!</p>
+            <label class="margins-blocks" for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+
+            <!-- Only change code below this line -->
+            <fieldset>
+                <legend>What level ninja are you?</legend>
+                <input id="newbie" type="radio" name="levels" value="newbie">
+                <label for="newbie">Newbie Kitten</label><br>
+                <input id="intermediate" type="radio" name="levels" value="intermediate">
+                <label for="intermediate">Developing Student</label><br>
+                <input id="master" type="radio" name="levels" value="master">
+                <label for="master">Master</label>
+            </fieldset>
+            <!-- Only change code above this line -->
+
+
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </section>
+
+    <form class="margins-blocks">
+        <p>Tell us the best date for the competition</p>
+        <label for="pickdate">Preferred Date:</label>
+
+        <!-- Only change code below this line -->
+        <input type="date" id="pickdate" name="date">
+
+
+        <!-- Only change code above this line -->
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
     <script src="script/main.js"></script>
 
     <!--
     <script src="script/script.js"></script>
 -->
+
+    <button>Reset</button>
 
     <footer>
         <a class="first">Copyright by DmytroGamza</a>
