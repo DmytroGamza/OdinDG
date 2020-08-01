@@ -18,8 +18,8 @@
 
  .first {
     background-color: red;
-       z-index: 2;
-    position: absolute;
+    position: center;
+    text-align: center;
   }
 
 html {
@@ -76,3 +76,11 @@ p, li {
 .margins-blocks {
   padding-bottom: 15px;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-column-gap: 10px;
+  grid-area: footer;
+}
+
